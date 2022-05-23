@@ -1,0 +1,44 @@
+
+1. Open vs code and create a file named my_app.py
+2. Create venv
+
+   python -m venv senv (python3 but not python in ec2)
+
+3. activate venv 
+
+   source env_name/Scripts/activate  
+   (if not works try without source)  
+   (in linux/mac machines bin instead of Scripts) 
+
+   (just "deactivate" to deactivate the venv)
+
+4. add packages into venv
+
+   pip install streamlit
+   pip install streamlit
+
+"""(pip list) to see the packages
+   (pip freeze > requirement.txt) to create requirement file
+   
+   or 
+
+   pip install -r requirement.txt        
+   (if you already have requirement file)""""
+
+  (python -V)
+  (streamlit version)
+
+5. streamlit run my_app.py
+
+
+
+POTENTIAL ERRORS AND SOLUTIONS:
+1. PowerShell says "execution of scripts is disabled on this system."
+
+SOLUTION:
+https://stackoverflow.com/questions/4037939/powershell-says-execution-of-scripts-is-disabled-on-this-system
+
+Set-ExecutionPolicy RemoteSigned
+
+Set-ExecutionPolicy Restricted
+
