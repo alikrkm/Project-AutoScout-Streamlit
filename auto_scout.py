@@ -19,7 +19,6 @@ elif brand == 'Renault':
     model = st.radio('Select a model',('Clio','Duster','Espace'))
 elif brand == 'Opel':
     model = st.radio('Select a model',('Astra','Corsa','Insignia'))
-st.sidebar.number_input("TV:",value=230, step=10)
 
 km = st.slider('Select km',0,500000,1000,1000)
 
